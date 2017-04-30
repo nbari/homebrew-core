@@ -57,6 +57,7 @@ class Immortal < Formula
       system "go", "build", "-ldflags", ldflags, "-o", "immortaldir", "cmd/immortaldir/main.go"
       bin.install %w[immortal immortalctl immortaldir]
       man8.install Dir["man/*.8"]
+
     end
   end
 
